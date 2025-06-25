@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería de Fotos</title>
+  <style>
+    :root {
+      --verde: #4caf50;
+      --claro: #f0fdf4;
+      --blanco: #ffffff;
+      --gris: #444;
+      --sombra: rgba(0, 0, 0, 0.06);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--claro);
+      color: var(--gris);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #388e3c, var(--verde));
+      color: var(--blanco);
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px var(--sombra);
+      object-fit: cover;
+      height: 150px;
+      transition: transform 0.2s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .galeria img {
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Galería de Fotos</h1>
+    <p>Recuerdos del proyecto de embellecimiento</p>
+  </header>
+
+  <main>
+    <div class="galeria">
+      <img src="1.jpeg" alt="Foto 1">
+      <img src="2.jpeg" alt="Foto 2">
+      <img src="3.jpeg" alt="Foto 3">
+      <img src="4.jpeg" alt="Foto 4">
+      <img src="5.jpeg" alt="Foto 5">
+      <img src="6.jpeg" alt="Foto 6">
+      <img src="7.jpeg" alt="Foto 7">
+      <img src="8.jpeg" alt="Foto 8">
+      <img src="9.jpeg" alt="Foto 9">
+      <img src="10.jpeg" alt="Foto 10">
+      <img src="11.jpeg" alt="Foto 11">
+      <img src="12.jpeg" alt="Foto 12">
+      <img src="13.jpeg" alt="Foto 13">
+      <img src="14.jpeg" alt="Foto 14">
+      <img src="15.jpeg" alt="Foto 15">
+      <img src="16.jpeg" alt="Foto 16">
+      <img src="17.jpeg" alt="Foto 17">
+      <img src="18.jpeg" alt="Foto 18">
+      <img src="19.jpeg" alt="Foto 19">
+      <img src="20.jpeg" alt="Foto 20">
+    </div>
+  </main>
+<center><button onclick="location.href='areasverdes.html'" 
+        style="padding: 10px 20px; background-color: #4caf50; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem;">
+  Inicio
+</button></center>
+  <footer>
+    Embellecimiento de áreas verdes | Nahomy Rene Bustamante Andrade
+  </footer>
+</body>
+</html>
